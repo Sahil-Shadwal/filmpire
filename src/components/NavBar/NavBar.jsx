@@ -8,7 +8,7 @@ import useStyles from './styles';
 
 const NavBar = () => {
   const classes = useStyles();
-  const isMobile = useMediaQuery('(max-width:600)');
+  const isMobile = useMediaQuery('(max-width:600px)');
   const theme = useTheme();
   const isAutheticated = true;
 
