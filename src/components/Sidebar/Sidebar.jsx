@@ -40,7 +40,9 @@ const Sidebar = ({ setMobileOpen }) => {
         <ListSubheader>Catergories</ListSubheader>
         {categories.map(({ label, value }) => (
           <Link key={value} className={classes.links} to="/">
-            <ListItemButton onClick={() => dispatch(selectGenreOrCategory(value))} buttonbase>
+            <ListItemButton onClick={() => dispatch(selectGenreOrCategory(value))}>
+              {/* <ListItemButton onClick={() => dispatch(selectGenreOrCategory(value))} buttonbase> */}
+
               <ListItemIcon>
                 <img src={genreIcons[label.toLowerCase()]} className={classes.genreImage} height={30} />
               </ListItemIcon>
@@ -58,7 +60,7 @@ const Sidebar = ({ setMobileOpen }) => {
           </Box>
         ) : data.genres.map(({ name, id }) => (
           <Link key={name} className={classes.links} to="/">
-            <ListItemButton onClick={() => dispatch(selectGenreOrCategory(id))} button>
+            <ListItemButton onClick={() => dispatch(selectGenreOrCategory(id))}>
               <ListItemIcon>
                 <img src={genreIcons[name.toLowerCase()]} className={classes.genreImage} height={30} />
               </ListItemIcon>
