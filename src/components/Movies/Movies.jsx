@@ -33,7 +33,7 @@ const Movies = () => {
 
   return (
     <div>
-      <MovieList movies={data} />
+      <MovieList movies={data} numberOfMovies={18} />
       <Pagination currentPage={page} setPage={setPage} totalPages={data.total_pages} />
     </div>
   );

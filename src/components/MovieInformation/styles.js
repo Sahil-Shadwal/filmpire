@@ -16,13 +16,16 @@ export default makeStyles((theme) => ({
     width: '80%',
     [theme.breakpoints.down('md')]: {
       margin: '0 auto',
+      display: 'flex',
       width: '50%',
       height: '450px',
+      marginBottom: '30px',
     },
     [theme.breakpoints.down('sm')]: {
       margin: '0 auto',
+      display: 'flex',
       width: '100%',
-      height: '450px',
+      height: '100%',
       marginBottom: '30px',
     },
   },
