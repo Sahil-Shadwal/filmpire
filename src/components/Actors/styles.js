@@ -5,7 +5,7 @@ export default makeStyles(() => ({
     maxWidth: '90%',
     borderRadius: '20px',
     objectFit: 'cover',
-    boxShadow: '0px 0px 10px 1px rgba(0,0,0,0.75)',
+    boxShadow: '0.5em 1em 1em rgba(140, 131, 131, 0.69)',
     margin: '0px 20px !important',
   },
 }));
