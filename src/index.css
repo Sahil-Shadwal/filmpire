@@ -2,10 +2,11 @@
     width: 7px;
 }
 ::-webkit-scrollbar-track {
-    background: #cfcfcf;
+    
+    background: #454343;
 }
 ::-webkit-scrollbar-thumb {
-    background: #a5a5a5;
+    background: #6b6969;
 }
 * {
     text-decoration: none;
