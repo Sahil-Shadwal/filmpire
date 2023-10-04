@@ -12,7 +12,7 @@ export default makeStyles((theme) => ({
   },
   poster: {
     borderRadius: '20px',
-    boxShadow: '0.5em 1em 1em rgba(34, 32, 32, 0.69)',
+    boxShadow: '0.5em 1em 1em rgba(175, 168, 168, 0.69)',
     width: '80%',
     [theme.breakpoints.down('md')]: {
       margin: '0 auto',
