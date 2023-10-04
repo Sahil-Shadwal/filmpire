@@ -30,6 +30,11 @@ const MovieInformation = () => {
 
   };
 
+  const getTrailerKey = (videos) => {
+    const trailerVideo = videos.find((video) => video.type === 'Trailer');
+    return trailerVideo ? trailerVideo.key : '';
+  };
+
   if (isFetching) {
     return (
       <Box display="flex" justifyContent="center" alignItems="center">
@@ -55,7 +60,7 @@ const MovieInformation = () => {
         />
       </Grid>
       <Grid item container direction="column" lg={7}>
-        <Typography variant="h3" align="center" gutterBottom>
+        <Typography variant="h3" align="center" gutterBottom style={{ marginTop: '15px' }}>
           {data?.title} ({data.release_date.split('-')[0]})
         </Typography>
         <Typography variant="h5" align="center" gutterBottom>
@@ -142,6 +147,8 @@ const MovieInformation = () => {
           ? <MovieList movies={recommendations} numberOfMovies={12} />
           : <Box> Sorrynothing was found.</Box>}
       </Box>
+      {console.log('Fuck the bitch')}
+      {console.log(data)}
       <Modal
         closeAfterTransition
         className={classes.modal}
@@ -152,11 +159,11 @@ const MovieInformation = () => {
           <iframe
             autoPlay
             className={classes.video}
-            // eslint-disable-next-line react/no-unknown-property
-            frameborder="0"
+            frameBorder="0"
             title="Trailer"
-            src={`https://www.youtube.com/embed/${data.videos.results[0].key}`}
+            src={`https://www.youtube.com/embed/${getTrailerKey(data.videos.results)}`}
             allow="autoplay"
+            allowFullScreen
           />
         )}
 
