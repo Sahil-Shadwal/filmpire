@@ -13,8 +13,8 @@ export default makeStyles((theme) => ({
     padding: '2em',
     width: '100%',
   },
-  [theme.breakpoints.down('sm')]: {
-    marginLeft: '10px',
-    // marginTop: '-10px',
-  },
+  // [theme.breakpoints.down('sm')]: {
+  //   marginLeft: '10px',
+  //   // marginTop: '-10px',
+  // },
 }));
