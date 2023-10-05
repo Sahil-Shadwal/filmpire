@@ -7,7 +7,7 @@ const ToggleColorMode = ({ children }) => {
   const [mode, setMode] = useState('dark');
 
   const toggleColorMode = () => {
-    setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
+    setMode((prevMode) => (prevMode === 'dark' ? 'light' : 'dark'));
   };
 
   const theme = useMemo(() => createTheme({
