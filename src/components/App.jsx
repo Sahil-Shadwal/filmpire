@@ -23,9 +23,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Movies />} />
           <Route path="/approved?" element={<Movies />} />
-          {/* <Route exact={false} path={`/:approved?request_token=${token}&approved=true`} element={<Movies />} /> */}
-          {/* <Route exact={false} path={`/:approved?request_token=${token}`} element={<Movies />} /> */}
-          {/* https://film-empire-two.vercel.app/approved?request_token=8f3450bc13be705ff33b6aac6fa222f900cab22d&approved=true */}
+
           <Route exact={false} path="/movie/:id" element={<MovieInformation />} />
           <Route path="/actor/:id" element={<Actors />} />
           <Route exact={false} path="/profile/:id" element={<Profile />} />
